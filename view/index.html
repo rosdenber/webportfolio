@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROZ Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/tailwind-custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-poppins">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="fixed top-0 left-0 w-full h-full bg-black flex items-center justify-center z-50">
+        <h1 id="typewriterText" class="typewriter-text font-sprintura text-4xl md:text-6xl text-white">R</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="min-h-screen" style="display: none;">
+        <!-- Your portfolio content goes here -->
+        <header class="flex justify-between items-center p-4 md:p-6 fixed top-0 w-full z-40 transition-all duration-300">
+            <div class="font-sprintura text-xl md:text-2xl font-bold text-white">ROZ</div>
+            <nav>
+                <ul class="flex gap-4 md:gap-8">
+                    <li><a href="#about" class="nav-link text-white hover:bg-blue-600 px-3 py-2 rounded-md transition-all">About Me</a></li>
+                    <li><a href="#skills" class="nav-link text-white hover:bg-blue-600 px-3 py-2 rounded-md transition-all">Skills</a></li>
+                    <li><a href="#projects" class="nav-link text-white hover:bg-blue-600 px-3 py-2 rounded-md transition-all">Projects</a></li>
+                    <li><a href="#reflection" class="nav-link text-white hover:bg-blue-600 px-3 py-2 rounded-md transition-all">Reflection</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center pt-20 pb-10 px-4 bg-gradient-to-br from-black to-gray-800">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-white"><span class="wiggle-letter">H</span><span class="wiggle-letter">e</span><span class="wiggle-letter">l</span><span class="wiggle-letter">l</span><span class="wiggle-letter">o</span><span class="wiggle-letter">,</span> <span class="wiggle-letter">I</span><span class="wiggle-letter">'</span><span class="wiggle-letter">m</span> <span class="rhoss-gradient wiggle-letter">R</span><span class="rhoss-gradient wiggle-letter">h</span><span class="rhoss-gradient wiggle-letter">o</span><span class="rhoss-gradient wiggle-letter">s</span><span class="rhoss-gradient wiggle-letter">s</span><span class="rhoss-gradient wiggle-letter">!</span></h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"><span class="wiggle-letter">I</span><span class="wiggle-letter">'</span><span class="wiggle-letter">m</span> <span class="wiggle-letter">a</span><span class="wiggle-letter">n</span> <span class="wiggle-letter">a</span><span class="wiggle-letter">s</span><span class="wiggle-letter">p</span><span class="wiggle-letter">i</span><span class="wiggle-letter">r</span><span class="wiggle-letter">i</span><span class="wiggle-letter">n</span><span class="wiggle-letter">g</span> <span class="wiggle-letter">d</span><span class="wiggle-letter">e</span><span class="wiggle-letter">v</span><span class="wiggle-letter">e</span><span class="wiggle-letter">l</span><span class="wiggle-letter">o</span><span class="wiggle-letter">p</span><span class="wiggle-letter">e</span><span class="wiggle-letter">r</span> <span class="wiggle-letter">c</span><span class="wiggle-letter">r</span><span class="wiggle-letter">e</span><span class="wiggle-letter">a</span><span class="wiggle-letter">t</span><span class="wiggle-letter">i</span><span class="wiggle-letter">n</span><span class="wiggle-letter">g</span> <span class="wiggle-letter">a</span><span class="wiggle-letter">m</span><span class="wiggle-letter">a</span><span class="wiggle-letter">z</span><span class="wiggle-letter">i</span><span class="wiggle-letter">n</span><span class="wiggle-letter">g</span> <span class="wiggle-letter">d</span><span class="wiggle-letter">i</span><span class="wiggle-letter">g</span><span class="wiggle-letter">i</span><span class="wiggle-letter">t</span><span class="wiggle-letter">a</span><span class="wiggle-letter">l</span> <span class="wiggle-letter">e</span><span class="wiggle-letter">x</span><span class="wiggle-letter">p</span><span class="wiggle-letter">e</span><span class="wiggle-letter">r</span><span class="wiggle-letter">i</span><span class="wiggle-letter">e</span><span class="wiggle-letter">n</span><span class="wiggle-letter">c</span><span class="wiggle-letter">e</span><span class="wiggle-letter">s</span></p>
+            </div>
+        </section>
+        
+        <section id="about" class="py-24 px-4 bg-black">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white relative pb-4"><span class="section-title">About Me</span><span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-blue"></span></h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
+                    <div class="p-1 bg-gradient-blue rounded-full">
+                        <img src="img/Picture.png" alt="Rhoss Dhenver Pineda" class="w-40 h-40 rounded-full object-cover">
+                    </div>
+                    <div class="text-left max-w-md">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">Name:</span>
+                            <span class="text-white">Rhoss Dhenver M. Pineda Jr.</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">Age:</span>
+                            <span class="text-white">21</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">Course:</span>
+                            <span class="text-white">Information Technology (3rd Year)</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">School:</span>
+                            <span class="text-white">Occidental Mindoro State College</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">Residence:</span>
+                            <span class="text-white">Mamburao, Occidental Mindoro</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-lg font-semibold text-gradient-blue">Interest: </span>
+                            <span class="text-white">Mobile & game development, Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-300 leading-relaxed">One of my biggest accomplishments so far is being able to design and develop several functional systems, such as an event attendance system and an emergency response system. These projects allowed me to apply my programming, database, and system design skills to real-world scenarios.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="py-24 px-4 bg-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Skills</span><span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-blue"></span></h2>
+                
+                <!-- Programming Languages -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold mb-8 text-white text-center">Programming Languages</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- PHP -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/php.png" alt="PHP" class="h-16 w-16 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- JavaScript -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/javascript.png" alt="JavaScript" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- HTML -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/HTML.png" alt="HTML" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- CSS -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/css.png" alt="CSS" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- SQL -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/mysql.png" alt="SQL" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Java -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/Java.png" alt="Java" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-orange-500 h-2 rounded-full" style="width: 35%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- C++ -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/c++.png" alt="C++" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Visual Basic -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/Visual Basic.png" alt="Visual Basic" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Python -->
+                        <div class="p-2">
+                            <div class="flex justify-center mb-2">
+                                <img src="img/python.png" alt="Python" class="h-12 w-12 object-contain">
+                            </div>
+                            <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools, Frameworks & Platforms -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 text-white text-center">Tools, Frameworks & Platforms</h3>
+                    
+                    <!-- Development Tools & IDEs -->
+                    <div class="mb-10">
+                        <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Development Tools & IDEs</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Visual Studio Code</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Visual Studio</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Apache NetBeans</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">XAMPP</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">MySQL Workbench</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Docker</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Git / GitHub</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Cisco Packet Tracer</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend & Styling Frameworks -->
+                    <div class="mb-10">
+                        <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Frontend & Styling Frameworks</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">ReactJS</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">React Native</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Bootstrap</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Tailwind</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Axios</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">SweetAlert</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center col-span-2">
+                                <div class="text-white font-medium">Node.js + Express.js</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Design & UI/UX Tools -->
+                    <div class="mb-10">
+                        <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Design & UI/UX Tools</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Canva</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Figma</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI / Development Assistants -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-gradient-blue">AI / Development Assistants</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">ChatGPT</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Gemini</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Cursor</div>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                                <div class="text-white font-medium">Qoder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="py-24 px-4 bg-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Projects</span><span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-blue"></span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- CitiRescue -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                        <div class="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">CitiRescue</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="inline-block px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm font-medium mb-3">Lead Developer</span>
+                                <p class="text-gray-300">A mobile system that streamlines emergency reporting and response coordination with real-time GPS tracking.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Native</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Expo</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Navigation</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Context API</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Native Maps</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Expo Location</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Image Picker</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Axios</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Node.js</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Express.js</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JWT</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">bcryptjs</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Multer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GreenGuide -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">GreenGuide</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="inline-block px-3 py-1 bg-green-900 text-green-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
+                                <p class="text-gray-300">A web application educating users on waste segregation and sustainability, with guides, tips, and interactive quizzes.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">HTML</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CSS</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JavaScript</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Node.js</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Express.js</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Python</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Flask</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">ML Service</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Multer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OMSCync -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white text-center px-4">OMSCync<br><span class="text-lg">QR Code Attendance</span></h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="inline-block px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
+                                <p class="text-gray-300">A system for event attendance tracking, featuring QR code check-ins, event management, and evaluations.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PHP</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">HTML</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CSS</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JavaScript</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Bootstrap</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">jQuery</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Ajax</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">SweetAlert2</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">BoxIcons</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PHP QR Code</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">XAMPP</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Apache</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book Borrowing System -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                        <div class="h-48 bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white text-center px-4">Book Borrowing System<br><span class="text-lg">OMSC Library</span></h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="inline-block px-3 py-1 bg-amber-900 text-amber-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
+                                <p class="text-gray-300">Developed a system to manage library book borrowing, including tracking borrowed books, due dates, and member records.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Visual Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Employee Record Management -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 md:col-span-2">
+                        <div class="h-48 bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white text-center px-4">Employee Record<br>Management System</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="inline-block px-3 py-1 bg-red-900 text-red-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
+                                <p class="text-gray-300">Developed a system to manage employee information, including adding, updating, deleting, and sorting employee records. Streamlined record-keeping and made it easier to organize employee data.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Visual Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reflection" class="py-24 px-4 bg-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Reflection</span><span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-blue"></span></h2>
+                <div class="space-y-10">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-gradient-blue">Technologies Used</h3>
+                        <p class="text-gray-300">For this portfolio, I utilized HTML, CSS (with Tailwind CSS framework), and JavaScript. These technologies form the foundation of my web development skills and allow me to create responsive, dynamic, and visually appealing interfaces. HTML provides the structural foundation, Tailwind CSS enables rapid and consistent styling with utility-first approach, and JavaScript adds interactivity and dynamic functionality to bring the portfolio to life.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-gradient-blue">Easiest Aspects</h3>
+                        <p class="text-gray-300">The HTML structure and content creation came naturally to me, as I have strong foundational knowledge in markup and organizing information hierarchically. Crafting the content for each section felt intuitive, allowing me to effectively showcase my projects and skills in a coherent manner.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-gradient-blue">Challenges Encountered</h3>
+                        <p class="text-gray-300">Working with Tailwind CSS presented a learning curve, as I'm more accustomed to traditional CSS frameworks like Bootstrap. Adapting to the utility-first approach required adjusting my workflow and thinking differently about styling components. However, this challenge helped me expand my skillset and appreciate the flexibility that Tailwind provides.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-gradient-blue">Future Learning Interests</h3>
+                        <p class="text-gray-300">I'm particularly drawn to mobile application development and fascinated by how mobile apps are architected, how frontend and backend components communicate seamlessly, and how data security is maintained throughout the system. Understanding the intricacies of mobile development would complement my web development skills and broaden my perspective on cross-platform development.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-gradient-blue">Future Applications</h3>
+                        <p class="text-gray-300">I aspire to create gaming applications that transcend pure entertainment by incorporating educational or practical elements. I envision games that can teach valuable skills, promote learning, or serve functional purposes in daily life, combining engaging gameplay mechanics with meaningful outcomes that benefit users beyond mere recreation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="py-24 px-4 bg-black">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Contact Me</h2>
+                <p class="text-lg text-gray-300 mb-8">Feel free to reach out if you want to collaborate or just say hi!</p>
+                <form class="flex flex-col gap-5 mt-8">
+                    <input type="text" placeholder="Your Name" required class="p-4 bg-gray-800 border border-gray-700 rounded-lg text-white font-poppins">
+                    <input type="email" placeholder="Your Email" required class="p-4 bg-gray-800 border border-gray-700 rounded-lg text-white font-poppins">
+                    <textarea placeholder="Your Message" required class="p-4 h-40 bg-gray-800 border border-gray-700 rounded-lg text-white font-poppins"></textarea>
+                    <button type="submit" class="px-6 py-4 bg-gradient-blue text-white rounded-full font-medium transition-all hover:opacity-90">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="py-8 bg-black text-center">
+            <p class="text-gray-400">&copy; 2026 ROZ Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update header on scroll for dark theme
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-black', 'bg-opacity-90');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-black', 'bg-opacity-90');
+                header.classList.add('bg-transparent');
+            }
+        });
+    </script>
+    
+    <!-- Dynamic square background script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const homeSection = document.getElementById('home');
+            const squareContainer = document.createElement('div');
+            squareContainer.className = 'square-container';
+            homeSection.appendChild(squareContainer);
+            
+            // Create random squares
+            for (let i = 0; i < 15; i++) {
+                createSquare();
+            }
+            
+            function createSquare() {
+                const square = document.createElement('div');
+                square.className = 'square ' + getRandomColor();
+                
+                // Random position
+                square.style.top = Math.random() * 100 + '%';
+                square.style.left = Math.random() * 100 + '%';
+                
+                // Random rotation
+                square.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+                
+                squareContainer.appendChild(square);
+            }
+            
+            function getRandomColor() {
+                const colors = ['orange', 'blue', 'cyan', 'purple', 'green', 'red', 'yellow', 'pink'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            
+            // Mouse move event to animate squares
+            document.addEventListener('mousemove', function(e) {
+                const homeRect = homeSection.getBoundingClientRect();
+                
+                // Check if mouse is within home section
+                if (e.clientX >= homeRect.left && e.clientX <= homeRect.right && 
+                    e.clientY >= homeRect.top && e.clientY <= homeRect.bottom) {
+                    
+                    const mouseX = e.clientX - homeRect.left;
+                    const mouseY = e.clientY - homeRect.top;
+                    
+                    const squares = document.querySelectorAll('.square');
+                    
+                    squares.forEach(square => {
+                        const squareRect = square.getBoundingClientRect();
+                        const squareX = squareRect.left - homeRect.left + squareRect.width / 2;
+                        const squareY = squareRect.top - homeRect.top + squareRect.height / 2;
+                        
+                        // Calculate distance from mouse to square
+                        const deltaX = mouseX - squareX;
+                        const deltaY = mouseY - squareY;
+                        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+                        // Calculate rotation and scale based on distance
+                        if (distance < 500) { // Only affect nearby squares
+                            const angle = Math.atan2(deltaY, deltaX) * 180 / Math.PI;
+                            const scale = 1 - (distance / 500);
+                            
+                            square.style.transform = `rotate(${angle}deg) scale(${Math.max(scale, 0.1)})`;
+                        } else {
+                            // Reset to original rotation if mouse is far
+                            const originalRotation = parseFloat(square.style.transform.match(/rotate\(([^)]+)\)/)?.[1] || 0);
+                            const currentScale = parseFloat(square.style.transform.match(/scale\(([^)]+)\)/)?.[1] || 1);
+                            square.style.transform = `rotate(${originalRotation}deg) scale(${currentScale})`;
+                        }
+                    });
+                }
+            });
+            
+            // Store original rotations
+            const squares = document.querySelectorAll('.square');
+            squares.forEach(square => {
+                const currentTransform = square.style.transform;
+                const rotationMatch = currentTransform.match(/rotate\(([^)]+)\)/);
+                if (rotationMatch) {
+                    square.dataset.originalRotation = rotationMatch[1];
+                }
+            });
+        });
+    </script>
+</body>
+</html>

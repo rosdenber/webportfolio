@@ -1,0 +1,176 @@
+/* Essential custom styles for the ROZ portfolio */
+
+/* Import Sprintura Demo font */
+@import url('https://fonts.googleapis.com/css2?family=Sprintura+Demo&display=swap');
+
+/* Custom font class */
+.font-sprintura {
+    font-family: 'Sprintura Demo', Arial, sans-serif;
+}
+
+/* Navigation menu hover effect */
+.nav-link {
+    will-change: filter;
+    transition: filter 300ms, background-size 300ms;
+    background-image: linear-gradient(135deg, #06b6d4, #3b82f6);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 0% 2px;
+}
+
+.nav-link:hover {
+    filter: drop-shadow(0 0 0.5em #06b6d4);
+    background-size: 100% 2px;
+}
+
+/* Typewriter effect */
+.typewriter-text {
+    animation: blink-caret 0.7s infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-right: 2px solid white; }
+}
+
+/* Gradient blue accent utilities */
+.bg-gradient-blue {
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+/* Rhoss text gradient and shimmer effect */
+.rhoss-gradient {
+    background: linear-gradient(90deg, #06b6d4, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+/* Per-letter wiggle animation */
+.wiggle-letter {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    margin: 0 0.5px; /* Small margin to preserve spacing */
+}
+
+.wiggle-letter:hover {
+    animation: wiggle 0.3s ease-in-out infinite;
+    z-index: 10; /* Ensure wiggling letters appear above others */
+    position: relative;
+    color: #3b82f6 !important; /* Blue color on hover */
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+.text-gradient-blue {
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Section title gradient shimmer effect */
+.section-title {
+    background: linear-gradient(90deg, #06b6d4, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.section-title:hover {
+    color: white !important;
+    filter: drop-shadow(0 0 0.5em #06b6d4);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+.border-gradient-blue {
+    border-image: linear-gradient(135deg, #06b6d4, #3b82f6) 1;
+}
+
+/* Scrollbar styling for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Dynamic square background effect */
+.square {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    transition: 0.2s linear;
+    pointer-events: none;
+}
+
+.square-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Different border colors for variety */
+.square.orange { border: 3px solid #ff5500; }
+.square.blue { border: 3px solid #3b82f6; }
+.square.cyan { border: 3px solid #06b6d4; }
+.square.purple { border: 3px solid #8b5cf6; }
+.square.green { border: 3px solid #10b981; }
+.square.red { border: 3px solid #ef4444; }
+.square.yellow { border: 3px solid #fbbf24; }
+.square.pink { border: 3px solid #ec4899; }
+
+/* Ensure home section has relative positioning for squares */
+#home {
+    position: relative !important;
+    overflow: hidden;
+    z-index: 1;
+}

@@ -1,0 +1,333 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.typewriter-text {
+    font-family: 'Sprintura Demo', Arial, sans-serif; /* Keeping Sprintura Demo as specified */
+    font-size: 4rem;
+    color: white;
+    animation: blink-caret 0.7s infinite;
+    white-space: nowrap;
+}
+
+.loading-typewriter {
+    text-align: center;
+}
+
+/* Animation for blinking cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-right: 2px solid white; }
+}
+
+/* Main content styles */
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: transparent; /* Transparent background to match your preferences */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.95); /* Dark background when scrolled */
+    box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+.logo {
+    font-family: 'Sprintura Demo', Arial, sans-serif; /* Same font as loading screen for consistency */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text by default */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* Keep text white */
+}
+
+/* Hero section styles */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+    margin-top: 80px; /* Account for fixed header */
+    background: linear-gradient(135deg, #000 0%, #222 100%);
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* About section */
+.about {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.about .container {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Projects section */
+.projects {
+    padding: 100px 0;
+    background-color: #111;
+}
+
+.projects .container {
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.project-card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Contact section */
+.contact {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.contact .container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .typewriter-text {
+        font-size: 3rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        margin-top: 70px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+}
