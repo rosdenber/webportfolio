@@ -403,15 +403,4 @@
     to { transform: rotate(360deg); }
 }
 
-/* Original hover rotations (now disabled) */
-.rotate-react:hover {
-    /* Disabled for continuous spin */
-}
-
-.rotate-sweetalert:hover {
-    /* Disabled for continuous spin */
-}
-
-.rotate-chatgpt:hover {
-    /* Disabled for continuous spin */
-}
+/* Original hover rotations removed - using continuous spin animations instead */
