@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROZ Portfolio</title>
+    <title>Web Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/tailwind-custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,12 +35,12 @@
             </div>
         </section>
         
-        <section id="about" class="py-24 px-4 bg-black">
+        <section id="about" class="py-24 px-4 bg-black translate-y-8">
             <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white relative pb-4"><span class="section-title">About Me</span></h2>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white relative pb-4 animate-on-scroll"><span class="section-title">About Me</span></h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-12 animate-on-scroll" data-animation-delay="200">
                     <div class="p-1 bg-gradient-blue rounded-full">
-                        <img src="../img/Picture.png" alt="Rhoss Dhenver Pineda" class="w-40 h-40 rounded-full object-cover">
+                        <img src="../img/Picture.png" alt="Rhoss Dhenver Pineda" class="w-40 h-40 rounded-full object-cover" style="filter: drop-shadow(0 8px 10px rgb(1, 37, 243))">
                     </div>
                     <div class="text-left max-w-md">
                         <div class="flex justify-between mb-2">
@@ -69,24 +69,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg max-w-3xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-lg max-w-3xl mx-auto animate-on-scroll" data-animation-delay="400">
                     <p class="text-lg text-gray-300 leading-relaxed">One of my biggest accomplishments so far is being able to design and develop several functional systems, such as an event attendance system and an emergency response system. These projects allowed me to apply my programming, database, and system design skills to real-world scenarios.</p>
                 </div>
             </div>
         </section>
         
-        <section id="skills" class="py-24 px-4 bg-black">
+        <section id="skills" class="py-24 px-4 bg-black translate-y-8">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Skills</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4 animate-on-scroll"><span class="section-title">Skills</span></h2>
                 
                 <!-- Programming Languages -->
                 <div class="mb-16">
-                    <h3 class="text-2xl font-bold mb-8 text-white text-center">Programming Languages</h3>
+                    <h3 class="text-2xl font-bold mb-8 text-white text-center animate-on-scroll" data-animation-delay="200">Programming Languages</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <!-- PHP -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/php.png" alt="PHP" class="h-16 w-16 object-contain" style="filter: drop-shadow(0 4px 6px rgb(92, 6, 179));">
+                                <span class="tooltip-text">PHP</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-green-500 h-2 rounded-full" style="width: 60%; filter: drop-shadow(0 4px 6px rgb(5, 236, 40))"></div>
@@ -95,8 +96,9 @@
                         
                         <!-- JavaScript -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/javascript.png" alt="JavaScript" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(218, 193, 5));">
+                                <span class="tooltip-text">JavaScript</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-green-500 h-2 rounded-full" style="width: 75%; filter: drop-shadow(0 4px 6px rgb(5, 236, 40))"></div>
@@ -105,8 +107,9 @@
                         
                         <!-- HTML -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/HTML.png" alt="HTML" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(175, 80, 2));">
+                                <span class="tooltip-text">HTML</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-green-500 h-2 rounded-full" style="width: 85%; filter: drop-shadow(0 4px 6px rgb(5, 236, 40))"></div>
@@ -115,8 +118,9 @@
                         
                         <!-- CSS -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/css.png" alt="CSS" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(4, 57, 180));">
+                                <span class="tooltip-text">CSS</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-green-500 h-2 rounded-full" style="width: 80%; filter: drop-shadow(0 4px 6px rgb(5, 236, 40))"></div>
@@ -125,8 +129,9 @@
                         
                         <!-- SQL -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/sql.png" alt="SQL" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(3, 3, 153));">
+                                <span class="tooltip-text">SQL</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-green-500 h-2 rounded-full" style="width: 80%; filter: drop-shadow(0 4px 6px rgb(5, 236, 40))"></div>
@@ -135,8 +140,9 @@
                         
                         <!-- Java -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/Java.png" alt="Java" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(236, 78, 5));">
+                                <span class="tooltip-text">Java</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-orange-500 h-2 rounded-full" style="width: 35%; filter: drop-shadow(0 4px 6px rgb(255, 94, 0))"></div>
@@ -145,8 +151,9 @@
                         
                         <!-- C++ -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/c++.png" alt="C++" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(6, 117, 190));">
+                                <span class="tooltip-text">C++</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-red-500 h-2 rounded-full" style="width: 15%; filter: drop-shadow(0 4px 6px rgb(255, 0, 0))"></div>
@@ -155,8 +162,9 @@
                         
                         <!-- Visual Basic -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/Visual Basic.png" alt="Visual Basic" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(106, 2, 209));">
+                                <span class="tooltip-text">Visual Basic</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-red-500 h-2 rounded-full" style="width: 20%; filter: drop-shadow(0 4px 6px rgb(255, 0, 0))"></div>
@@ -165,8 +173,9 @@
                         
                         <!-- Python -->
                         <div class="p-2">
-                            <div class="flex justify-center mb-2">
+                            <div class="flex justify-center mb-2 logo-tooltip">
                                 <img src="../img/python.png" alt="Python" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(176, 179, 6));">
+                                <span class="tooltip-text">Python</span>
                             </div>
                             <div class="w-3/4 mx-auto bg-gray-700 rounded-full h-2">
                                 <div class="bg-red-500 h-2 rounded-full" style="width: 20%; filter: drop-shadow(0 4px 6px rgb(255, 0, 0))"></div>
@@ -177,35 +186,74 @@
                 
                 <!-- Tools, Frameworks & Platforms -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-8 text-white text-center">Tools, Frameworks & Platforms</h3>
+                    <h3 class="text-2xl font-bold mb-8 text-white text-center animate-on-scroll" data-animation-delay="200">Tools, Frameworks & Platforms</h3>
                     
                     <!-- Development Tools & IDEs -->
                     <div class="mb-10">
                         <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Development Tools & IDEs</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Visual Studio Code</div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <!-- Visual Studio Code -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/visual studio code.png" alt="Visual Studio Code" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(25, 118, 210));">
+                                    <span class="tooltip-text">Visual Studio Code</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Visual Studio</div>
+                            
+                            <!-- Visual Studio -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/visual studio.png" alt="Visual Studio" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(75, 0, 130));">
+                                    <span class="tooltip-text">Visual Studio</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Apache NetBeans</div>
+                            
+                            <!-- Apache NetBeans -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/apache netbeans.png" alt="Apache NetBeans" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(255, 140, 0));">
+                                    <span class="tooltip-text">Apache NetBeans</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">XAMPP</div>
+                            
+                            <!-- XAMPP -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/xampp.png" alt="XAMPP" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(255, 69, 0));">
+                                    <span class="tooltip-text">XAMPP</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">MySQL Workbench</div>
+                            
+                            <!-- MySQL Workbench -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/mysqlworkbench.png" alt="MySQL Workbench" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(0, 116, 166));">
+                                    <span class="tooltip-text">MySQL Workbench</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Docker</div>
+                            
+                            <!-- Docker -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/docker.png" alt="Docker" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(0, 152, 219));">
+                                    <span class="tooltip-text">Docker</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Git / GitHub</div>
+                            
+                            <!-- Git/GitHub -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/Github.png" alt="Git / GitHub" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(255, 255, 255));">
+                                    <span class="tooltip-text">Git / GitHub</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Cisco Packet Tracer</div>
+                            
+                            <!-- Cisco Packet Tracer -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/cisco-packet-tracer.png" alt="Cisco Packet Tracer" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(17, 102, 170));">
+                                    <span class="tooltip-text">Cisco Packet Tracer</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,27 +261,63 @@
                     <!-- Frontend & Styling Frameworks -->
                     <div class="mb-10">
                         <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Frontend & Styling Frameworks</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">ReactJS</div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <!-- React Native -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/react icon.png" alt="React Native" class="h-12 w-12 object-contain spin-react" style="filter: drop-shadow(0 4px 6px rgb(97, 218, 251));">
+                                    <span class="tooltip-text">React Native</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">React Native</div>
+                            
+                            <!-- Bootstrap -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/Bootstrap.png" alt="Bootstrap" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(110, 64, 170));">
+                                    <span class="tooltip-text">Bootstrap</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Bootstrap</div>
+                            
+                            <!-- Tailwind -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/tailwind.png" alt="Tailwind" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(56, 189, 248));">
+                                    <span class="tooltip-text">Tailwind</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Tailwind</div>
+                            
+                            <!-- Axios -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/axios.png" alt="Axios" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(74, 144, 226));">
+                                    <span class="tooltip-text">Axios</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Axios</div>
+                            
+                            <!-- SweetAlert -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/SweetAlert.png" alt="SweetAlert" class="h-12 w-12 object-contain spin-sweetalert" style="filter: drop-shadow(0 4px 6px rgb(240, 101, 101));">
+                                    <span class="tooltip-text">SweetAlert</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">SweetAlert</div>
+                            
+                            <!-- Node.js -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/node js.png" alt="Node.js" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(255, 255, 255));">
+                                    <span class="tooltip-text">Node.js</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center col-span-2">
-                                <div class="text-white font-medium">Node.js + Express.js</div>
+                            
+                            <!-- Express.js -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <div class="bg-white rounded-lg p-2 flex items-center justify-center" style="height: 48px; width: 48px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+                                        <span class="text-black font-bold text-xs">Express</span>
+                                    </div>
+                                    <span class="tooltip-text">Express.js</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,12 +325,21 @@
                     <!-- Design & UI/UX Tools -->
                     <div class="mb-10">
                         <h4 class="text-xl font-semibold mb-4 text-gradient-blue">Design & UI/UX Tools</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Canva</div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <!-- Canva -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/canva.png" alt="Canva" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(0, 195, 255));">
+                                    <span class="tooltip-text">Canva</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Figma</div>
+                            
+                            <!-- Figma -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/Figma.png" alt="Figma" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(247, 247, 247));">
+                                    <span class="tooltip-text">Figma</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -254,18 +347,29 @@
                     <!-- AI / Development Assistants -->
                     <div>
                         <h4 class="text-xl font-semibold mb-4 text-gradient-blue">AI / Development Assistants</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">ChatGPT</div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <!-- ChatGPT -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/chatGPT.png" alt="ChatGPT" class="h-12 w-12 object-contain spin-chatgpt" style="filter: drop-shadow(0 4px 6px rgb(0, 254, 190));">
+                                    <span class="tooltip-text">ChatGPT</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Gemini</div>
+                            
+                            <!-- Gemini -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/gemini.png" alt="Gemini" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(77, 89, 237));">
+                                    <span class="tooltip-text">Gemini</span>
+                                </div>
                             </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Cursor</div>
-                            </div>
-                            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                                <div class="text-white font-medium">Qoder</div>
+                            
+                            <!-- Cursor -->
+                            <div class="p-2">
+                                <div class="flex justify-center mb-2 logo-tooltip">
+                                    <img src="../img/cursor.png" alt="Cursor" class="h-12 w-12 object-contain" style="filter: drop-shadow(0 4px 6px rgb(255, 255, 255));">
+                                    <span class="tooltip-text">Cursor</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -273,18 +377,22 @@
             </div>
         </section>
         
-        <section id="projects" class="py-24 px-4 bg-black">
+        <section id="projects" class="py-24 px-4 bg-black translate-y-8">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Projects</span></h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4 animate-on-scroll"><span class="section-title">Projects</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-on-scroll" data-animation-delay="200">
                     <!-- CitiRescue -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
-                        <div class="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
-                            <h3 class="text-2xl font-bold text-white">CitiRescue</h3>
+                    <div class="bg-gray-800 rou nded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="../img/CitiRescue.png" alt="CitiRescue Emergency Response System" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <h3 class="text-2xl font-bold text-white">CitiRescue</h3>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="mb-4">
-                                <span class="inline-block px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm font-medium mb-3">Lead Developer</span>
+                                <span class="inline-block px-3 py-1 bg-red-900 text-red-200 rounded-full text-sm font-medium mb-3">Lead Developer</span>
                                 <p class="text-gray-300">A mobile system that streamlines emergency reporting and response coordination with real-time GPS tracking.</p>
                             </div>
                             <div>
@@ -292,11 +400,8 @@
                                 <div class="flex flex-wrap gap-2">
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Native</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Expo</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Navigation</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Context API</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Native Maps</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Expo Location</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Image Picker</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Axios</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Node.js</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Express.js</span>
@@ -311,8 +416,12 @@
                     
                     <!-- GreenGuide -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
-                        <div class="h-48 bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                            <h3 class="text-2xl font-bold text-white">GreenGuide</h3>
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="../img/GreenGuide.png" alt="GreenGuide Sustainability App" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <h3 class="text-2xl font-bold text-white">GreenGuide</h3>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="mb-4">
@@ -339,8 +448,13 @@
                     
                     <!-- OMSCync -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
-                        <div class="h-48 bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center">
-                            <h3 class="text-2xl font-bold text-white text-center px-4">OMSCync<br><span class="text-lg">QR Code Attendance</span></h3>
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="../img/Event Attendance.png" alt="OMSCync QR Code Attendance System" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <h3 class="text-2xl font-bold text-white">OMSCync</h3>
+                                <p class="text-white text-lg">QR Code Attendance</p>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="mb-4">
@@ -356,11 +470,8 @@
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CSS</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JavaScript</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Bootstrap</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">jQuery</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Ajax</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">SweetAlert2</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">BoxIcons</span>
-                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PHP QR Code</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">XAMPP</span>
                                     <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Apache</span>
                                 </div>
@@ -370,8 +481,13 @@
                     
                     <!-- Book Borrowing System -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
-                        <div class="h-48 bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center">
-                            <h3 class="text-2xl font-bold text-white text-center px-4">Book Borrowing System<br><span class="text-lg">OMSC Library</span></h3>
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="../img/LibraryBookBorrowingSystem.png" alt="Library Book Borrowing System" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <h3 class="text-2xl font-bold text-white">Book Borrowing System</h3>
+                                <p class="text-white text-lg">OMSC Library</p>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="mb-4">
@@ -389,12 +505,17 @@
                     
                     <!-- Employee Record Management -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 md:col-span-2">
-                        <div class="h-48 bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center">
-                            <h3 class="text-2xl font-bold text-white text-center px-4">Employee Record<br>Management System</h3>
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="../img/EmployeeSystem.png" alt="Employee Record Management System" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <h3 class="text-2xl font-bold text-white">Employee Record Management</h3>
+                                <p class="text-white text-lg">System</p>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="mb-4">
-                                <span class="inline-block px-3 py-1 bg-red-900 text-red-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
+                                <span class="inline-block px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm font-medium mb-3">Full-Stack Developer</span>
                                 <p class="text-gray-300">Developed a system to manage employee information, including adding, updating, deleting, and sorting employee records. Streamlined record-keeping and made it easier to organize employee data.</p>
                             </div>
                             <div>
@@ -409,10 +530,10 @@
             </div>
         </section>
         
-        <section id="reflection" class="py-24 px-4 bg-black">
+        <section id="reflection" class="py-24 px-4 bg-black translate-y-8">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4"><span class="section-title">Reflection</span></h2>
-                <div class="space-y-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center relative pb-4 animate-on-scroll"><span class="section-title">Reflection</span></h2>
+                <div class="space-y-10 animate-on-scroll" data-animation-delay="200">
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-xl font-bold mb-3 text-gradient-blue">What technologies did you use and why?</h3>
                         <p class="text-gray-300">For this portfolio, I used HTML, CSS (with Tailwind CSS), and JavaScript because these are the technologies I am most familiar with. They allowed me to build a responsive, interactive, and visually appealing interface. HTML provided the structure, Tailwind CSS made styling faster and more consistent, and JavaScript added the interactivity that brings the portfolio to life.</p>

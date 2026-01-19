@@ -174,3 +174,244 @@
     overflow: hidden;
     z-index: 1;
 }
+
+/* Maintain existing home section square effects */
+.square {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    transition: 0.2s linear;
+    pointer-events: none;
+}
+
+.square-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Different border colors for variety */
+.square.orange { border: 3px solid #ff5500; }
+.square.blue { border: 3px solid #3b82f6; }
+.square.cyan { border: 3px solid #06b6d4; }
+.square.purple { border: 3px solid #8b5cf6; }
+.square.green { border: 3px solid #10b981; }
+.square.red { border: 3px solid #ef4444; }
+.square.yellow { border: 3px solid #fbbf24; }
+.square.pink { border: 3px solid #ec4899; }
+
+/* Scroll-triggered animations */
+.animate-fadeInUp {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-opacity {
+    transition: opacity 0.7s ease-out;
+}
+
+.duration-700 {
+    transition-duration: 0.7s;
+}
+
+.translate-y-8 {
+    transform: translateY(2rem);
+}
+
+.translate-y-10 {
+    transform: translateY(2.5rem);
+}
+
+.translate-y-12 {
+    transform: translateY(3rem);
+}
+
+/* Floating particles for specific sections */
+.section-particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.section-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.6) 0%, rgba(59, 130, 246, 0.3) 70%, transparent 100%);
+    animation: float-section 12s infinite ease-in-out;
+    opacity: 0.7;
+    top: var(--start-y, 80%);
+}
+
+.section-particle.small { 
+    width: 6px; 
+    height: 6px; 
+    animation-duration: 15s; 
+}
+
+.section-particle.medium { 
+    width: 10px; 
+    height: 10px; 
+    animation-duration: 18s; 
+}
+
+.section-particle.large { 
+    width: 14px; 
+    height: 14px; 
+    animation-duration: 22s; 
+}
+
+/* Staggered animations */
+.section-particle.delay-1 { animation-delay: -2s; }
+.section-particle.delay-2 { animation-delay: -5s; }
+.section-particle.delay-3 { animation-delay: -8s; }
+.section-particle.delay-4 { animation-delay: -11s; }
+
+@keyframes float-section {
+    0% {
+        transform: translateY(80%) translateX(0) scale(0.8);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.7;
+        transform: translateY(60%) translateX(5px) scale(0.9);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(30%) translateX(15px) scale(1);
+    }
+    85% {
+        opacity: 0.7;
+        transform: translateY(0%) translateX(25px) scale(1.1);
+    }
+    100% {
+        transform: translateY(-30%) translateX(30px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Ensure sections have relative positioning for particles */
+#about, #skills, #projects, #reflection {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tooltip styles for logo hover */
+.logo-tooltip {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logo-tooltip:hover {
+    transform: scale(1.15);
+}
+
+.logo-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 4px;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.logo-tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1f2937 transparent transparent transparent;
+}
+
+.logo-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Adjust tooltip position for better mobile experience */
+@media (max-width: 768px) {
+    .logo-tooltip .tooltip-text {
+        font-size: 0.75rem;
+        width: 100px;
+        padding: 6px 3px;
+    }
+}
+
+/* Rotating logo animations */
+.rotate-logo {
+    transition: transform 0.6s ease-in-out;
+}
+
+.rotate-logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Continuous spinning animations */
+.spin-react {
+    animation: spin-react 4s linear infinite;
+}
+
+.spin-sweetalert {
+    animation: spin-sweetalert 3s linear infinite;
+}
+
+.spin-chatgpt {
+    animation: spin-chatgpt 5s linear infinite;
+}
+
+@keyframes spin-react {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-sweetalert {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-chatgpt {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Original hover rotations (now disabled) */
+.rotate-react:hover {
+    /* Disabled for continuous spin */
+}
+
+.rotate-sweetalert:hover {
+    /* Disabled for continuous spin */
+}
+
+.rotate-chatgpt:hover {
+    /* Disabled for continuous spin */
+}
